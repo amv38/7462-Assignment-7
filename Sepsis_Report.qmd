@@ -1,0 +1,78 @@
+---
+title: "ICU Status Report"
+author: "Abby Vogel"
+date: "`r Sys.time()`"
+format: html
+editor: visual
+---
+
+
+```{r prep}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(gt)
+library(googledrive)
+
+source("sepsis_monitor_functions.R")
+##pull in most recent data from google drive
+## Calling drive_deauth() prevents R from trying to authenticate via a browser
+## This is needed to make the GitHub Action work
+drive_deauth()
+file_link <- "https://drive.google.com/file/d/1JpH8Fw4SNsMyy_5IrkL7tOFfPreIfnw1/sepsis_data.csv"
+
+## All data up until now
+new_data <- updateData(file_link)
+
+## Include only most recent data
+most_recent_data <- new_data %>%
+  group_by(PatientID) %>%
+  filter(obsTime == max(obsTime))
+
+```
+
+
+## Current Sepsis
+
+A table listing the patients who currently have sepsis (if any), along with their most recent heart rate, temperature, and respiratory rate
+
+```{r table1}
+#| echo: false
+#| message: false
+
+table1_data <- most_recent_data %>%
+  filter(SepsisLabel %in% 1)
+
+if(nrow(table1_data) != 0){
+  gt(table1_data)
+} else {
+  print("No patients currently have sepsis.")
+}
+```
+
+## Sepsis Patients' Medical History
+
+Plots for all patients who have sepsis (if any) that show the complete history of their heart rate, temperature, and respiratory rate during their time in the ICU.
+
+
+```{r}
+#| echo: false
+#| message: false
+
+
+```
+
+
+## Change in Medical Measurements for all Patients
+
+A table showing the change in heart rate, temperature, and respiratory rate between the last two measurements for all patients
+
+```{r}
+#| echo: false
+#| message: false
+
+
+
+```
