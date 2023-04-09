@@ -1,3 +1,3 @@
 # 7462-sepsis-monitor
 
-Source repository for PUBH 7462 Assignment 7. See Assignment instructions on Canvas.
+This is me just trying my best. Github actions are beyond me.
