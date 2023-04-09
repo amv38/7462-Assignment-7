@@ -38,11 +38,9 @@ jobs:
                any::purrr
       - name: Render document
         uses: quarto-dev/quarto-actions/render@v2
-        env:
-          MAPS_API_KEY: ${{ secrets.MAPS_API_KEY }}
         with:
           to: html
-          path: drive_times_report.qmd
+          path: Sepsis_Report.qmd
       - name: Setup git config
         run: |
           git config user.name "GitHub Actions Bot"
