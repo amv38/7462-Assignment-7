@@ -1,6 +1,6 @@
 on:
   schedule:
-    -cron:"*/60 * * * *"
+    -cron:"0 * * * *"
 
 name: Render Report
 
