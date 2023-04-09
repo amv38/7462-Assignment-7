@@ -51,7 +51,7 @@ updateData <- function(drive_url) {
     read_csv()
   
   updated_data <- data %>%
-    filter(obsTime < Sys.time())
+   filter(obsTime < Sys.time())
   
   return(updated_data)
 }

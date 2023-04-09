@@ -6,7 +6,6 @@ format: html
 editor: visual
 ---
 
-
 ```{r prep}
 #| echo: false
 #| warning: false
@@ -23,6 +22,10 @@ source("sepsis_monitor_functions.R")
 drive_deauth()
 file_link <- "https://drive.google.com/file/d/1JpH8Fw4SNsMyy_5IrkL7tOFfPreIfnw1/sepsis_data.csv"
 
+## all data
+drive_download(file_link, overwrite = TRUE)
+all_data <- read.csv("sepsis_data.csv")
+
 ## All data up until now
 new_data <- updateData(file_link)
 
@@ -33,7 +36,6 @@ most_recent_data <- new_data %>%
 
 ```
 
-
 ## Current Sepsis
 
 A table listing the patients who currently have sepsis (if any), along with their most recent heart rate, temperature, and respiratory rate
@@ -43,10 +45,18 @@ A table listing the patients who currently have sepsis (if any), along with thei
 #| message: false
 
 table1_data <- most_recent_data %>%
-  filter(SepsisLabel %in% 1)
+  filter(SepsisLabel %in% 1) %>%
+  select(1:5) %>%
+  ungroup()
 
 if(nrow(table1_data) != 0){
-  gt(table1_data)
+  gt(table1_data) %>%
+    tab_header(title = "Current Patients with Sepsis") %>%
+    cols_label(PatientID = "Patient ID",
+               ICULOS = "ICU Length of Stay\n (Hours)",
+               HR = "Heart Rate\n (BPM)",
+               Temp = "Temperature\n (Deg F)",
+               Resp = "Respiratory Rate\n (Breaths/Min)")
 } else {
   print("No patients currently have sepsis.")
 }
@@ -56,23 +66,76 @@ if(nrow(table1_data) != 0){
 
 Plots for all patients who have sepsis (if any) that show the complete history of their heart rate, temperature, and respiratory rate during their time in the ICU.
 
-
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
+
+plot_data <- all_data %>%
+  filter(SepsisLabel %in% 1)
+
+if(nrow(plot_data) != 0){
+   ggplot(data = plot_data, aes(x = ICULOS, y = HR, group = as.factor(PatientID))) +
+    geom_line(mapping = aes(color = as.factor(PatientID))) +
+    guides(color = "legend") +
+    labs(title = "Heart Rate History Through Length of Stay",
+         y = "Heart Rate (BPM)",
+         x = "Hours Since Admission to ICU",
+         color = "Patient ID")
+
+} else{
+  print("No patients currently have sepsis.")
+}
 
 
+if(nrow(plot_data) != 0){
+   
+  ggplot(data = plot_data, aes(x = ICULOS, y = Temp, group = as.factor(PatientID)))+
+    geom_line(mapping = aes(color = as.factor(PatientID))) +
+    guides(color = "legend") +
+    labs(title = "Temperature History Through Length of Stay",
+         y = "Temperature (degrees Fahrenheit)",
+         x = "Hours Since Admission to ICU",
+         color = "Patient ID")  
+}
+    
+if(nrow(plot_data) != 0){
+    
+  ggplot(data = plot_data, aes(x = ICULOS, y = Resp, group = as.factor(PatientID))) +
+    geom_line(mapping = aes(color = as.factor(PatientID))) +
+    guides(color = "legend") +
+    labs(title = "Respiratory History Through Length of Stay",
+         y = "Respriatory Rate (breaths per minute)",
+         x = "Hours Since Admission to ICU",
+         color = "Patient ID")
+}
 ```
-
 
 ## Change in Medical Measurements for all Patients
 
-A table showing the change in heart rate, temperature, and respiratory rate between the last two measurements for all patients
+
 
 ```{r}
 #| echo: false
 #| message: false
 
+table2 <- all_data %>%
+  group_by(PatientID) %>%
+  filter(obsTime == max(obsTime) | obsTime == max(obsTime[obsTime != max(obsTime)]))
 
+table2_1 <- table2 %>%
+  group_by(PatientID) %>%
+  summarize("HR.change" = diff(HR, 1),"Temp.change" = diff(Temp, 1),  "Resp.change" =diff(Resp,1))
 
+table2_gt <- gt(table2_1)
+
+table2_gt %>%
+  tab_header(title = "Most Recent Change in Vital Signs for All Patients") %>%
+  cols_label(
+    PatientID = "Patient ID",
+    HR.change = "Change in\n Heart Rate",
+    Temp.change = "Change in\n Temperature",
+    Resp.change = "Change in\n Respiratory Rate"
+  )
+  
 ```

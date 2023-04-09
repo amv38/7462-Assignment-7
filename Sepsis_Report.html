@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Abby Vogel">
-<meta name="dcterms.date" content="2023-04-08">
+<meta name="dcterms.date" content="2023-04-09">
 
 <title>ICU Status Report</title>
 <style>
@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 8, 2023</p>
+      <p class="date">April 9, 2023</p>
     </div>
   </div>
   
@@ -81,8 +81,454 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="current-sepsis">Current Sepsis</h2>
 <p>A table listing the patients who currently have sepsis (if any), along with their most recent heart rate, temperature, and respiratory rate</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "No patients currently have sepsis."</code></pre>
+<div class="cell-output-display">
+
+<div id="fvphxcrkhi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#fvphxcrkhi) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#fvphxcrkhi) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#fvphxcrkhi) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#fvphxcrkhi) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#fvphxcrkhi) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#fvphxcrkhi) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#fvphxcrkhi) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#fvphxcrkhi) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#fvphxcrkhi) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#fvphxcrkhi) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#fvphxcrkhi) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#fvphxcrkhi) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#fvphxcrkhi) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#fvphxcrkhi) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#fvphxcrkhi) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#fvphxcrkhi) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#fvphxcrkhi) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#fvphxcrkhi) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#fvphxcrkhi) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#fvphxcrkhi) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#fvphxcrkhi) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#fvphxcrkhi) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#fvphxcrkhi) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#fvphxcrkhi) .gt_left {
+  text-align: left;
+}
+
+:where(#fvphxcrkhi) .gt_center {
+  text-align: center;
+}
+
+:where(#fvphxcrkhi) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#fvphxcrkhi) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#fvphxcrkhi) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#fvphxcrkhi) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#fvphxcrkhi) .gt_super {
+  font-size: 65%;
+}
+
+:where(#fvphxcrkhi) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#fvphxcrkhi) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#fvphxcrkhi) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#fvphxcrkhi) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#fvphxcrkhi) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#fvphxcrkhi) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#fvphxcrkhi) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Current Patients with Sepsis</td>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Patient ID">Patient ID</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="ICU Length of Stay
+ (Hours)">ICU Length of Stay
+ (Hours)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Heart Rate
+ (BPM)">Heart Rate
+ (BPM)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Temperature
+ (Deg F)">Temperature
+ (Deg F)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Respiratory Rate
+ (Breaths/Min)">Respiratory Rate
+ (Breaths/Min)</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="PatientID" class="gt_row gt_right">009972</td>
+<td headers="ICULOS" class="gt_row gt_right">3</td>
+<td headers="HR" class="gt_row gt_right">109</td>
+<td headers="Temp" class="gt_row gt_right">NA</td>
+<td headers="Resp" class="gt_row gt_right">12</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
 </div>
 </div>
 </section>
@@ -90,14 +536,661 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="sepsis-patients-medical-history">Sepsis Patients’ Medical History</h2>
 <p>Plots for all patients who have sepsis (if any) that show the complete history of their heart rate, temperature, and respiratory rate during their time in the ICU.</p>
 <div class="cell">
-
+<div class="cell-output-display">
+<p><img src="Sepsis_Report_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="Sepsis_Report_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="Sepsis_Report_files/figure-html/unnamed-chunk-1-3.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 </section>
 <section id="change-in-medical-measurements-for-all-patients" class="level2">
 <h2 class="anchored" data-anchor-id="change-in-medical-measurements-for-all-patients">Change in Medical Measurements for all Patients</h2>
-<p>A table showing the change in heart rate, temperature, and respiratory rate between the last two measurements for all patients</p>
 <div class="cell">
+<div class="cell-output-display">
 
+<div id="glkjlkjhya" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#glkjlkjhya) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#glkjlkjhya) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#glkjlkjhya) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#glkjlkjhya) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#glkjlkjhya) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#glkjlkjhya) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#glkjlkjhya) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#glkjlkjhya) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#glkjlkjhya) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#glkjlkjhya) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#glkjlkjhya) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#glkjlkjhya) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#glkjlkjhya) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#glkjlkjhya) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#glkjlkjhya) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#glkjlkjhya) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#glkjlkjhya) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#glkjlkjhya) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#glkjlkjhya) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#glkjlkjhya) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#glkjlkjhya) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#glkjlkjhya) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#glkjlkjhya) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#glkjlkjhya) .gt_left {
+  text-align: left;
+}
+
+:where(#glkjlkjhya) .gt_center {
+  text-align: center;
+}
+
+:where(#glkjlkjhya) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#glkjlkjhya) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#glkjlkjhya) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#glkjlkjhya) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#glkjlkjhya) .gt_super {
+  font-size: 65%;
+}
+
+:where(#glkjlkjhya) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#glkjlkjhya) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#glkjlkjhya) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#glkjlkjhya) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#glkjlkjhya) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#glkjlkjhya) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#glkjlkjhya) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <td colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Most Recent Change in Vital Signs for All Patients</td>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Patient ID">Patient ID</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Change in
+ Heart Rate">Change in
+ Heart Rate</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Change in
+ Temperature">Change in
+ Temperature</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Change in
+ Respiratory Rate">Change in
+ Respiratory Rate</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="PatientID" class="gt_row gt_right">169</td>
+<td headers="HR.change" class="gt_row gt_right">0</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">2</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">231</td>
+<td headers="HR.change" class="gt_row gt_right">9</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">333</td>
+<td headers="HR.change" class="gt_row gt_right">-4</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">2</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">412</td>
+<td headers="HR.change" class="gt_row gt_right">-10</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">788</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1072</td>
+<td headers="HR.change" class="gt_row gt_right">-2</td>
+<td headers="Temp.change" class="gt_row gt_right">-0.20</td>
+<td headers="Resp.change" class="gt_row gt_right">1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1184</td>
+<td headers="HR.change" class="gt_row gt_right">0</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-2</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1221</td>
+<td headers="HR.change" class="gt_row gt_right">1</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-4</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1314</td>
+<td headers="HR.change" class="gt_row gt_right">-10</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-8</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1329</td>
+<td headers="HR.change" class="gt_row gt_right">5</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1376</td>
+<td headers="HR.change" class="gt_row gt_right">-7</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">9</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1776</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">1794</td>
+<td headers="HR.change" class="gt_row gt_right">-1</td>
+<td headers="Temp.change" class="gt_row gt_right">-0.05</td>
+<td headers="Resp.change" class="gt_row gt_right">-1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">2260</td>
+<td headers="HR.change" class="gt_row gt_right">3</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">0</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">2627</td>
+<td headers="HR.change" class="gt_row gt_right">3</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">7</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">3165</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">3216</td>
+<td headers="HR.change" class="gt_row gt_right">4</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">0</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">3228</td>
+<td headers="HR.change" class="gt_row gt_right">1</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">5</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">3687</td>
+<td headers="HR.change" class="gt_row gt_right">7</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-4</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">3943</td>
+<td headers="HR.change" class="gt_row gt_right">-6</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">4281</td>
+<td headers="HR.change" class="gt_row gt_right">5</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">2</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">4615</td>
+<td headers="HR.change" class="gt_row gt_right">-11</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">4834</td>
+<td headers="HR.change" class="gt_row gt_right">-11</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">5199</td>
+<td headers="HR.change" class="gt_row gt_right">2</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">5354</td>
+<td headers="HR.change" class="gt_row gt_right">-1</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">5815</td>
+<td headers="HR.change" class="gt_row gt_right">9</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">5820</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">5823</td>
+<td headers="HR.change" class="gt_row gt_right">2</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">5967</td>
+<td headers="HR.change" class="gt_row gt_right">5</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6107</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6355</td>
+<td headers="HR.change" class="gt_row gt_right">-1</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-2</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6421</td>
+<td headers="HR.change" class="gt_row gt_right">-1</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6563</td>
+<td headers="HR.change" class="gt_row gt_right">-2</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">0</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6614</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6620</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6833</td>
+<td headers="HR.change" class="gt_row gt_right">-1</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">0</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">6835</td>
+<td headers="HR.change" class="gt_row gt_right">0</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-2</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">7096</td>
+<td headers="HR.change" class="gt_row gt_right">0</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">7149</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">7345</td>
+<td headers="HR.change" class="gt_row gt_right">-8</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">9</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">7442</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">7954</td>
+<td headers="HR.change" class="gt_row gt_right">NA</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">NA</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">8183</td>
+<td headers="HR.change" class="gt_row gt_right">5</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">8434</td>
+<td headers="HR.change" class="gt_row gt_right">-7</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">9204</td>
+<td headers="HR.change" class="gt_row gt_right">-7</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">9512</td>
+<td headers="HR.change" class="gt_row gt_right">-7</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">3</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">9515</td>
+<td headers="HR.change" class="gt_row gt_right">-6</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">-1</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">9606</td>
+<td headers="HR.change" class="gt_row gt_right">9</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">21</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">9840</td>
+<td headers="HR.change" class="gt_row gt_right">-5</td>
+<td headers="Temp.change" class="gt_row gt_right">NA</td>
+<td headers="Resp.change" class="gt_row gt_right">2</td></tr>
+    <tr><td headers="PatientID" class="gt_row gt_right">9972</td>
+<td headers="HR.change" class="gt_row gt_right">-4</td>
+<td headers="Temp.change" class="gt_row gt_right">-0.61</td>
+<td headers="Resp.change" class="gt_row gt_right">4</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
 </div>
 </section>
 
