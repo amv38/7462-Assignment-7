@@ -11,11 +11,32 @@ editor: visual
 #| warning: false
 #| message: false
 
-library(tidyverse)
 library(gt)
+library(tidyverse)
+library(data.table) ## For the fread function
+library(lubridate)
 library(googledrive)
+library(googlesheets4)
+
+
 
 source("sepsis_monitor_functions.R")
+
+df <- makeSepsisDataset()
+
+# We have to write the file to disk first, then upload it
+df %>% write_csv("sepsis_data_temp.csv")
+
+# Uploading happens here
+sepsis_file <- drive_put(media = "sepsis_data_temp.csv", 
+                         path = "https://drive.google.com/drive/folders/1qbUCGdFgUDzipeupj2iNQsEPHRKm732W",
+                         name = "sepsis_data.csv")
+
+# Set the file permissions so anyone can download this file.
+sepsis_file %>% drive_share_anyone()
+
+
+
 ##pull in most recent data from google drive
 ## Calling drive_deauth() prevents R from trying to authenticate via a browser
 ## This is needed to make the GitHub Action work
